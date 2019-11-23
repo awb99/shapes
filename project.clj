@@ -1,12 +1,22 @@
-(defproject awb99/shapes "0.1.1"
+(defproject awb99/shapes "0.1.2"
   :description "A shapes library"
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
 
+  :repositories [["clojars" {:url "https://clojars.org/repo"
+                             :username "awb99"
+                             :sign-releases false}]]
+
   :min-lein-version "2.7.1"
 
-  :dependencies [[org.clojure/clojure "1.9.0-alpha17"]
-                 [org.clojure/clojurescript "1.9.854"]]
+  :dependencies 
+  [
+   [org.clojure/clojure "1.10.1"]
+   [org.clojure/clojurescript "1.10.520"]
+   
+   [org.pinkgorilla/gorilla-renderable "2.1.0"]
+   
+   ]
 
   :source-paths ["src"]
   :cljsbuild {:builds []}
